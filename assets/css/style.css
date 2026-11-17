@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 17.5rem;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+  background-color: grey;
+}
+
+a {
+  color: white;
+}
+
+.header {
+  background-color: #262626;
+}
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.375rem 1.875rem;
+  padding: 1.75rem 4.2%;
+}
+
+.logo {
+  flex: 1 1 11.875rem;
+  font-size: 2rem;
+  text-decoration: none;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.navigation {
+  display: flex;
+  flex: 2 1 27.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem 2.125rem;
+}
+
+.navigation a {
+  font-size: 1rem;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation a:hover {
+  color: grey;
+}
+
+.contact-button {
+  display: flex;
+  flex: 0 0 7.625rem;
+  min-height: 3.125rem;
+  align-items: center;
+  justify-content: center;
+  border: 0.125rem solid white;
+  border-radius: 0.3125rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.contact-button:hover {
+  color: black;
+  background-color: white;
+}
+
+.hero {
+  min-height: 35rem;
+  background-image: url("https://anvikor.ru/images/blog/e42536393b1f4b5ffc9c48602639fe7e.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
