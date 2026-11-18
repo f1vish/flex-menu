@@ -3,7 +3,6 @@
 }
 
 body {
-  min-width: 17.5rem;
   margin: 0;
   font-family: sans-serif;
   color: white;
@@ -11,7 +10,7 @@ body {
 }
 
 a {
-  color: white;
+  color: inherit;
 }
 
 .header {
@@ -36,12 +35,18 @@ a {
 }
 
 .navigation {
-  display: flex;
   flex: 2 1 25rem;
+}
+
+.navigation ul {
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 1rem 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .navigation a {
@@ -56,15 +61,15 @@ a {
 }
 
 .contact-button {
-  display: flex;
+  display: block;
   flex: 0 0 7.625rem;
   min-height: 3.125rem;
-  align-items: center;
-  justify-content: center;
+  padding: 0.875rem 0;
   border: 0.125rem solid white;
   border-radius: 0.3125rem;
   font-size: 0.8125rem;
   font-weight: 700;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.2s;
@@ -81,4 +86,11 @@ a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+/* я вже пройшов тему медіа запитів, тому використовую її для того, щоб вирівняти навігацію на ліво */
+@media (max-width: 700px) {
+  .navigation ul {
+    justify-content: flex-start;
+  }
 }
